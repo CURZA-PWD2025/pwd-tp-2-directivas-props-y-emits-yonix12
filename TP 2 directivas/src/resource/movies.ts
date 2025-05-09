@@ -1,3 +1,13 @@
+export type Pelicula = {
+  id: number
+  titulo: string
+  genero: string
+  anio: number
+  director: string
+  likes: number
+  portada: string
+}
+
 const movies = [
   {
     id: 1,
@@ -6,7 +16,7 @@ const movies = [
     anio: 1994,
     director: "Frank Darabont",
     likes: 2800000,
-    portada: "https://www.imdb.com/title/tt0111161/mediaviewer/rm10105600/",
+    portada: "https://rukminim2.flixcart.com/image/850/1000/k77xx8w0/poster/c/g/t/medium-the-shawshank-redemption-movie-poster-for-room-with-gloss-original-imafphnwmxjkvfjf.jpeg?q=90&crop=false",
   },
   {
     id: 2,
@@ -15,7 +25,7 @@ const movies = [
     anio: 1972,
     director: "Francis Ford Coppola",
     likes: 2500000,
-    portada: "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868480/",
+    portada: "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_.jpg",
   },
   {
     id: 3,
@@ -24,7 +34,7 @@ const movies = [
     anio: 2008,
     director: "Christopher Nolan",
     likes: 2300000,
-    portada: "https://www.imdb.com/title/tt0468569/mediaviewer/rm1711892736/",
+    portada: "https://m.media-amazon.com/images/I/A1exRxgHRRL.jpg",
   },
   {
     id: 4,
@@ -33,7 +43,7 @@ const movies = [
     anio: 1994,
     director: "Robert Zemeckis",
     likes: 2100000,
-    portada: "https://www.imdb.com/title/tt0109830/mediaviewer/rm2264338944/",
+    portada: "https://i.ebayimg.com/images/g/A8sAAOSwMIphZOs6/s-l1200.jpg",
   },
   {
     id: 5,
@@ -42,7 +52,7 @@ const movies = [
     anio: 2010,
     director: "Christopher Nolan",
     likes: 2100000,
-    portada: "https://www.imdb.com/title/tt1375666/mediaviewer/rm245982720/",
+    portada: "https://i.ebayimg.com/images/g/LTQAAOSw~gxfU1Rd/s-l1200.jpg",
   },
   {
     id: 6,
@@ -51,7 +61,7 @@ const movies = [
     anio: 1999,
     director: "David Fincher",
     likes: 2000000,
-    portada: "https://www.imdb.com/title/tt0137523/mediaviewer/rm298639360/",
+    portada: "https://m.media-amazon.com/images/I/81D+KJkO4SL._AC_UF894,1000_QL80_.jpg",
   },
   {
     id: 7,
@@ -60,7 +70,7 @@ const movies = [
     anio: 1999,
     director: "The Wachowskis",
     likes: 1900000,
-    portada: "https://www.imdb.com/title/tt0133093/mediaviewer/rm693712640/",
+    portada: "https://i5.walmartimages.com/seo/The-Matrix-Poster-Keanu-Reeves-New-24x36_34782a57-6fb5-4d70-b716-a2e7dd2e573b.5ebcc6b21770ab4e95ee2824e43900f6.jpeg",
   },
   {
     id: 8,
@@ -69,7 +79,7 @@ const movies = [
     anio: 2003,
     director: "Peter Jackson",
     likes: 1800000,
-    portada: "https://www.imdb.com/title/tt0167260/mediaviewer/rm586017280/",
+    portada: "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_.jpg",
   },
   {
     id: 9,
@@ -79,7 +89,7 @@ const movies = [
     anio: 1994,
     director: "Quentin Tarantino",
     likes: 1700000,
-    portada: "https://www.imdb.com/title/tt0110912/mediaviewer/rm1859525376/",
+    portada: "https://i.ebayimg.com/images/g/YlcAAMXQW7VRFKFG/s-l1200.jpg",
   },
   {
     id: 10,
@@ -88,7 +98,7 @@ const movies = [
     anio: 1993,
     director: "Steven Spielberg",
     likes: 1600000,
-    portada: "https://www.imdb.com/title/tt0108052/mediaviewer/rm2765199872/",
+    portada: "https://i.pinimg.com/736x/16/dc/f0/16dcf03b7244c896d4c149b250913f0f.jpg",
   },
   {
     id: 11,
@@ -97,7 +107,7 @@ const movies = [
     anio: 1991,
     director: "Jonathan Demme",
     likes: 1500000,
-    portada: "https://www.imdb.com/title/tt0102926/mediaviewer/rm220570240/",
+    portada: "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_.jpg",
   },
   {
     id: 12,
@@ -106,7 +116,7 @@ const movies = [
     anio: 2014,
     director: "Christopher Nolan",
     likes: 1400000,
-    portada: "https://www.imdb.com/title/tt0816692/mediaviewer/rm222785024/",
+    portada: "https://m.media-amazon.com/images/I/614QSV5M4lL._AC_UF894,1000_QL80_.jpg",
   },
   {
     id: 13,
@@ -115,7 +125,7 @@ const movies = [
     anio: 2000,
     director: "Ridley Scott",
     likes: 1300000,
-    portada: "https://www.imdb.com/title/tt0172495/mediaviewer/rm4120464896/",
+    portada: "https://www.itsalldowntown.com/wp-content/uploads/2023/08/Gladiator-poster.jpg",
   },
   {
     id: 14,
@@ -124,7 +134,7 @@ const movies = [
     anio: 2010,
     director: "David Fincher",
     likes: 1200000,
-    portada: "https://www.imdb.com/title/tt1285016/mediaviewer/rm243419392/",
+    portada: "https://i.pinimg.com/474x/8b/41/e2/8b41e2f169d86d87aa4c543af61d51b7.jpg",
   },
   {
     id: 15,
@@ -133,7 +143,7 @@ const movies = [
     anio: 2006,
     director: "Christopher Nolan",
     likes: 1100000,
-    portada: "https://www.imdb.com/title/tt0482571/mediaviewer/rm4016075008/",
+    portada: "https://i.pinimg.com/736x/4f/4d/fa/4f4dfabe5c46358c8d821bd2716e8186.jpg",
   },
 ];
 
